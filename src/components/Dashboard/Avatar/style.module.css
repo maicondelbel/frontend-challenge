@@ -1,0 +1,24 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary--200);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 99999px;
+  border: 1px solid var(--secondary--100);
+  overflow: hidden;
+}
+
+.avatar__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  .avatar {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

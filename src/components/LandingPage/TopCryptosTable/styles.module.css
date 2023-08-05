@@ -1,0 +1,96 @@
+.cryptos-table__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cryptos-table {
+  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cryptos-table__thead th {
+  color: var(--secondary--500);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  text-align: start;
+}
+
+.cryptos-table__thead th:first-child {
+  padding-left: 2.4rem;
+}
+
+.cryptos-table__thead th:last-child {
+  padding-right: 2.4rem;
+}
+
+.cryptos-table__tbody td {
+  padding: 1.6rem 0;
+}
+
+.cryptos-table__tbody tr:nth-child(even) {
+  background: var(--secondary--100);
+}
+
+.cryptos-table__tbody td:first-child {
+  padding-left: 2.4rem;
+  font-size: 1.4rem;
+  color: var(--secondary--500);
+  width: 15%;
+}
+
+.cryptos-table__tbody td:nth-child(2) {
+  width: auto;
+}
+
+.cryptos-table__tbody td:nth-child(3) {
+  width: 20%;
+}
+
+.cryptos-table__tbody td:nth-child(4) {
+  width: 15%;
+}
+
+.cryptos-table__tbody td:last-child {
+  padding-right: 2.4rem;
+  width: 10%;
+}
+
+.cryptos-table__tbody__icon {
+  border-radius: 100%;
+}
+
+.cryptos-table__tbody__icon-column {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.cryptos-table__button {
+  color: var(--primary--500);
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.value--positive {
+  color: var(--tertiary--700);
+}
+
+.value--negative {
+  color: var(--quartenary--700);
+}
+
+
+@media (max-width: 576px) {
+  .cryptos-table__wrapper {
+    display: none;
+  }
+}

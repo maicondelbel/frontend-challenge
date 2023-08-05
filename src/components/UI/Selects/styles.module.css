@@ -1,0 +1,122 @@
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+  line-height: 1;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid var(--secondary--300);
+  max-height: 4.8rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.select__icon {
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.select--error {
+  outline: 1px solid var(--quartenary--500);
+  border-radius: 6px;
+}
+
+.select span {
+  display: flex;
+  align-items: center;
+}
+
+.select[data-placeholder] {
+  color: var(--violet-9);
+}
+
+.select[data-state="open"] .select__icon {
+  transform: rotate(180deg);
+}
+
+.select__content {
+  border-radius: 6px;
+  background: var(--white);
+  overflow: hidden;
+  z-index: 60;
+  width: var(--radix-popper-anchor-width);
+  border: 1px solid var(--secondary--300);
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.10);
+}
+
+.select__content--cryptos {
+  height: calc(var(--radix-select-content-available-height) - 10rem);
+}
+
+.select__viewport {
+  border-radius: 6px;
+  background: #FFF;
+}
+
+.select__viewport div+div {
+  border-top: 1px solid var(--secondary--200);
+}
+
+.select__item {
+  line-height: 1.6rem;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+  position: relative;
+  user-select: none;
+  font-size: 1.4rem;
+}
+
+.select__item span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select__scroll__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: var(--secondary--100);
+  cursor: pointer;
+}
+
+.crypto__label {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.crypto__label div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.crypto__label--name {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.crypto__label--symbol {
+  color: var(--secondary--500);
+
+}
+
+.select__item[data-disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.select__item[data-highlighted] {
+  outline: none;
+  background-color: var(--secondary--100);
+}
+
+
+
+@media (max-width: 576px) {
+  .select {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+}

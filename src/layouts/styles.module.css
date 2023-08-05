@@ -1,0 +1,38 @@
+.wrapper {
+  height: calc(100vh - (6.4rem + 6.5rem));
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+  padding-left: 8.6rem;
+  background: #F5F5F5;
+  overflow-y: scroll;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 132.8rem;
+  padding: 5.6rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-left: 0;
+    margin-top: 6rem;
+    margin-bottom: 5.6rem;
+    height: calc(100vh - (6rem + 5.6rem));
+
+  }
+  .main {
+    padding: 4.8rem
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 2.4rem
+  }
+  .wrapper {
+    margin-top: 5.6rem;
+    height: calc(100vh - (5.6rem + 5.6rem));
+  }
+}
+

@@ -1,0 +1,40 @@
+.card {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-radius: 6px;
+  background: var(--WHITE);
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.05);
+  max-width: 28rem;
+}
+
+.card__subtitle {
+  color: var(--primary--500);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.card__title {
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 576px) {
+  .card img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .card__subtitle {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .card__title {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+}

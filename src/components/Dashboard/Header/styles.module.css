@@ -1,0 +1,65 @@
+.header {
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  box-shadow: 0px 4px 8px 0px rgba(77, 77, 77, 0.10);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.mobile__menu {
+  display: none;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+
+.header__profile svg {
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.rotate-efect {
+  transform: rotate(180deg);
+}
+
+.header__profile span {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.4rem 4.8rem;
+  }
+
+  .mobile__menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 1.6rem 2.4rem;
+  }
+
+  .header__logo {
+    height: 1.6rem
+  }
+
+  .profile__name {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+}
+
+.card {
+  background-color: var(--white);
+}
+
+.card__header {
+  padding: 1.6rem 0.8rem;
+  border-radius: 6px 6px 0px 0px;
+  background: var(--primary--100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card__body {
+  padding: 1.6rem;
+}
+
+.separator {
+  margin: 1.6rem 0;
+  height: 1px;
+  background: var(--secondary--200);
+}
+
+.crypto__title {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.crypto__title span {
+  color: var(--secondary--500);
+}
+
+.crypto__session__title {
+  color: var(--secondary--500);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.crypto__price {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.crypto__amount {
+  color: var(--primary--400);
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.crypto__change {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.crypto__change--positive {
+  color: var(--tertiary--700);
+}
+
+.crypto__change--negative {
+  color: var(--quartenary--700);
+}
+
+.card button {
+  margin-top: 1.6rem;
+  max-height: 2.4rem;
+  width: 100%;
+}
+
+@media (min-width: 577px) {
+  .cards__wrapper {
+    display: none;
+  }
+}

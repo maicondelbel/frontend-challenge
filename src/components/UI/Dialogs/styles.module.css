@@ -1,0 +1,212 @@
+.dialog__overlay {
+  background: var(--text--base);
+  opacity: 0.8999999761581421;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+}
+
+.dialog__content {
+  overflow: hidden;
+  transition: all 0.1s ease;
+  background-color: var(--white);
+  padding: 3.2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.10);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 5.6rem);
+  max-width: 44.8rem;
+  z-index: 20;
+}
+
+.dialog__content--signIn {
+  height: 38.3rem;
+}
+
+.dialog__content--signUp {
+  height: 55.2rem;
+}
+
+.dialog__content[data-state="open"] {
+  animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog__content[data-state="closed"] {
+  animation: contentClose 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dialog__content:focus {
+  outline: none;
+}
+
+.dialog__close-button {
+  cursor: pointer;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+  margin: 0.8rem;
+}
+
+.dialog__title--lp {
+  font-weight: 400;
+  text-align: center;
+}
+
+.dialog__title--db {
+  text-align: center;
+}
+
+.dialog__title__coin {
+  font-weight: 700;
+  color: var(--primary--500);
+}
+
+.dialog__title__sync {
+  font-weight: 700;
+  color: var(--gray--500);
+}
+
+.form {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form>div+div {
+  margin-top: 2.4rem;
+}
+
+.form button[type="submit"] {
+  margin-top: 2.4rem;
+}
+
+.form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.form__link {
+  align-self: end;
+  margin-top: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--secondary--500);
+}
+
+.dialog__footer {
+  cursor: pointer;
+  margin-top: 2.4rem;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.separator {
+  margin: 2.4rem 0;
+  height: 1px;
+  background-color: var(--secondary--200);
+}
+
+.selected-coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.selected-coin>span {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.selected-coin__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.coin-name {
+  margin-right: 0.4rem;
+}
+
+.coin-symbol {
+  color: var(--secondary--500);
+}
+
+
+@media (max-width: 768px) {
+  .dialog__content {
+    max-width: 32rem;
+  }
+
+  .dialog__content--signIn {
+    height: 40.7rem;
+  }
+
+  .dialog__content--signUp {
+    height: 52.7rem;
+  }
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayClose {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes contentClose {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.96);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .dialog__content {
+    padding: 2.4rem;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .dialog__content {
+    padding: 1.6rem;
+  }
+}

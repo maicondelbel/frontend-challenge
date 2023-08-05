@@ -1,0 +1,17 @@
+.empty-wallet__wrapper {
+  margin: 5.6rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.empty-wallet__wrapper img {
+  margin-bottom: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.empty-wallet__wrapper h5 {
+  margin-bottom: 0.8rem;
+  line-height: 1.6rem;
+}

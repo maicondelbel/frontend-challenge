@@ -1,0 +1,27 @@
+.coin {
+  display: flex !important;
+  align-items: center;
+  gap: 0.8rem;
+  width: auto !important;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.coin__symbol {
+  color: var(--secondary--800);
+}
+
+.coin__change--positive {
+  color: var(--tertiary--700);
+}
+
+.coin__change--negative {
+  color: var(--quartenary--700);
+}
+
+@media (max-width: 1170px) {
+  .coin {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "newsletter": [],
+  "session": [
+    {
+      "id": 1,
+      "name": "Maicon Del Bel",
+      "email": "contato@maicondelbel.com",
+      "avatar_url": "/images/avatar.jpg"
+    }
+  ],
+  "register": [],
+  "my_wallet": []
+}

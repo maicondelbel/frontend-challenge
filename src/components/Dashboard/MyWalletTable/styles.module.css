@@ -1,0 +1,141 @@
+.my-wallet-table__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.my-wallet-table {
+  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.my-wallet-table__crypto {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.my-wallet-table__crypto-name {}
+
+.my-wallet-table__crypto-symbol {
+  color: var(--secondary--500);
+}
+
+.my-wallet-table__thead th {
+  color: var(--secondary--500);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  text-align: start;
+}
+
+.my-wallet-table__thead th:first-child {
+  padding-left: 2.4rem;
+}
+
+.my-wallet-table__thead th:last-child {
+  padding-right: 2.4rem;
+}
+
+.my-wallet-table__tbody td {
+  padding: 1.6rem 0;
+}
+
+.my-wallet-table__tbody tr:nth-child(even) {
+  background: var(--secondary--100);
+}
+
+.my-wallet-table__tbody td:first-child {
+  padding-left: 2.4rem;
+  font-size: 1.4rem;
+  color: var(--secondary--500);
+  width: 6.4rem;
+}
+
+.my-wallet-table__tbody td:nth-child(2) {
+  width: auto;
+}
+
+.my-wallet-table__tbody td:nth-child(3) {
+  font-size: 1.4rem;
+}
+
+.my-wallet-table__tbody td:nth-child(3) div {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-wallet-table__tbody td:nth-child(3) small {
+  color: var(--primary--500);
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.my-wallet-table__tbody td:nth-child(4) {}
+
+.my-wallet-table__tbody td:last-child {
+  padding-right: 2.4rem;
+  width: 3.6rem;
+}
+
+.my-wallet-table__tbody__icon {
+  border-radius: 100%;
+}
+
+.my-wallet-table__tbody__icon-column>div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.my-wallet-table__button {
+  color: var(--primary--500);
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.value--positive {
+  color: var(--tertiary--700);
+}
+
+.value--negative {
+  color: var(--quartenary--700);
+}
+
+.trade__button {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  padding: 0.8rem;
+  cursor: pointer;
+  width: 1.6rem;
+  height: 1.6rem
+}
+
+.trade__button:hover svg {
+  filter: brightness(0.5);
+}
+
+
+@media (max-width: 576px) {
+  .my-wallet-table__wrapper {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .trade__button {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 0;
+
+  }
+}

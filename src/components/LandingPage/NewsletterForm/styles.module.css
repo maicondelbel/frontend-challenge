@@ -1,0 +1,37 @@
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter__form input:disabled {
+  opacity: 0.8;
+}
+
+.newsletter__form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.newsletter__form label {
+  font-size: 1.4rem;
+  color: var(--white);
+  line-height: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.newsletter__input {
+  background: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.10);
+  color: var(--secondary--400);
+  padding: 1.6rem 3.8rem 1.6rem 1.6rem;
+  max-height: 4.8rem;
+  box-sizing: border-box;
+  margin-bottom: 2.1rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.newsletter__input--error {
+  border: 2px solid var(--quartenary--500);
+}

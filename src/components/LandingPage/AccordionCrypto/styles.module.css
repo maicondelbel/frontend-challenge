@@ -1,0 +1,134 @@
+.accordion__wrapper {
+  width: 100%;
+  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.6rem 0.8rem 1.6rem;
+  color: var(--secondary--500);
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.accordion__item:nth-child(even) {
+  background: var(--secondary--100);
+}
+
+.accordion__trigger {
+  padding: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.accordion__trigger svg {
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordion__trigger[data-state='open']>svg {
+  transform: rotate(180deg);
+}
+
+.accordion__trigger__label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 400;
+}
+
+.accordion__trigger__label p {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.accordion__trigger__label span {
+  color: var(--secondary--500);
+}
+
+.accordion__content {
+  overflow: hidden;
+}
+
+.accordion__content[data-state='open'] {
+  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordion__content[data-state='closed'] {
+  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.accordion__content__wrapper {
+  background-color: var(--white);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-top: 1px solid var(--secondary--200)
+}
+
+.accordion__content__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__content__line__label {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--secondary--500);
+}
+
+.accordion__content__line__value {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.value--positive {
+  color: var(--tertiary--700);
+}
+
+.value--negative {
+  color: var(--quartenary--700);
+}
+
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+
+  to {
+    height: 0;
+  }
+}
+
+
+@media (min-width: 577px) {
+  .accordion__wrapper {
+    display: none;
+  }
+}

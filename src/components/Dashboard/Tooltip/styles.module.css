@@ -1,0 +1,15 @@
+.tootip__content {
+  padding: 0.8rem 2.4rem;
+  background-color: var(--primary--500);
+  border-radius: 0.4rem;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  z-index: 2;
+}
+
+.tooltip__icon {
+  fill: #FBAB34;
+  width: 16px;
+  height: 8px;
+}

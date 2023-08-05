@@ -34,7 +34,7 @@ npm install
 npm run dev:server
 ```
 
-> Em outro terminal, inicie o Projeto:
+> Em outro terminal e na pasta do projeto, inicie-o:
 
 ```bash
 npm run dev

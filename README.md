@@ -5,7 +5,7 @@
 ![Layout do eduick](https://github.com/edusynch/frontend-challenge/raw/main/.github/capa-coinsync.png)
 
 # 💻 Projeto
-> Projeto proposto como desafio para o processo seletivo como Desenvolver Pleno.
+> Projeto proposto como desafio para um processo seletivo como Desenvolvedor Pleno.
 
 
 ## ℹ️ Como Executar?
